@@ -12,20 +12,26 @@
 
 <body>
     <div class="container-fluid">
+        <div class="row">
+            <div class="col p-0 app__background">
+                <img src="img/header.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
         <header class="row">
-            <div class="col p-0">
-                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="col p-0 mb-4">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
                     <div class="container-fluid">
-                        <a class="navbar-brand text-white" href="index.html"><i class="bi bi-view-list"></i></a>
-                        <ul class=" navbar-nav d-flex">
+                        <a class="navbar-brand" href="index.html"><img src="img/logo.png"
+                                class="app__logo img-thumbnail bg-light p-0 border-0" alt=""></a>
+                        <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="about.html">Quíenes somos</a>
+                                <a class="nav-link" href="about.html">Quíenes somos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="faq.html">Preguntas frecuentes</a>
+                                <a class="nav-link" href="faq.html">Preguntas frecuentes</a>
                             </li>
                         </ul>
                     </div>
@@ -38,9 +44,20 @@
             </div>
         </div>
     </div>
-    <footer class="mt-auto text-center bg-primary text-white">
-        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a
-                href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    <footer class="mt-auto text-center bg-secondary text-white p-3">
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group text-start app__footer__list">
+                    <a href="index.html" class="list-group-item list-group-item-action bg-secondary border-0 p-0"
+                        aria-current="true">Inicio</a>
+                    <a href="about.html" class="list-group-item list-group-item-action bg-secondary border-0 p-0"
+                        aria-current="true">Quíenes somos</a>
+                    <a href="faq.html" class="list-group-item list-group-item-action bg-secondary border-0 p-0"
+                        aria-current="true">Preguntas frecuentes</a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados Company Name, por Tema Company .</p>
     </footer>
 
 </body>
