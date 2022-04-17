@@ -43,8 +43,26 @@
         </header>
     </div>
 
-    <main class="row p-0">
-        <aside class="col-3 p-0">
+    <main class="row bg-info">
+        <header class="bg-light">
+            <nav aria-label="breadcrumb" class="px-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active">
+                        <i class="bi bi-search"></i>
+                        <a href="#searchSect" class="text-decoration-none">FAQ Search</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <i class="bi bi-patch-question-fill"></i>
+                        <a href="#staticSect" class="text-decoration-none">Ultimate FAQs</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <i class="bi bi-arrow-up-square-fill"></i>
+                        <a href="#submitSect" class="text-decoration-none">Submit Question</a>
+                    </li>
+                </ol>
+            </nav>
+        </header>
+        <!-- <aside class="col-3 p-0">
             <nav>
                 <ul class="list-group">
                     <li class="list-group-item list-group-item-action">
@@ -58,25 +76,34 @@
                     </li>
                 </ul>
             </nav>
-        </aside>
-        <section class="col-9 p-0">
-            <!-- <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Ultimate FAQs</a></li>
-                    <li class="breadcrumb-item"><a href="#">FAQ Search</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Submit Question</li>
-                </ol>
-            </nav> -->
+        </aside> -->
+        <section class="col-12 px-3 bg-danger">
+            <!-- Search Cuestion -->
+            <article class="row p-5">
+                <div class="input-group">
+                    <div class="form-floating">
+                        <input type="text" class="form-control rounded-0 rounded-start" id="floatingInput"
+                            placeholder="Enter your question...">
+                        <label for="floatingInput">
+                            Buscar por tema</i>
+                        </label>
+                    </div>
+                    <span class="input-group-text btn-outline-secondary" id="basic-addon2">
+                        <i class="bi bi-search"></i>
+                    </span>
+                </div>
+            </article>
+            <!-- End Search Cuestion -->
+
             <!-- Static Cuestion -->
-            <article class="backgroundFaq p-3">
+            <article class="bg-warning p-3" id="staticSect">
                 <h3 class="text-center mb-4 pb-2 text-primary fw-bold">FAQ</h3>
                 <p class="text-center mb-5">
                     Find the answers for the most frequently asked questions below
                 </p>
                 <div class="row">
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <h6 class="mb-3 text-primary"><i class="far fa-paper-plane text-primary pe-2"></i> A simple
-                            question?</h6>
+                        <h6 class="mb-3 text-primary"><i class="bi bi-apple"></i>Boostrap for iOS</h6>
                         <p>
                             <strong><u>Absolutely!</u></strong> We work with top payment companies which guarantees
                             your
@@ -134,9 +161,133 @@
                 </div>
             </article>
             <!-- End Static Cuestion -->
-            <article>
 
+            <!-- Submit Question -->
+            <article class=" p-3">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <section>
+                            <div>
+                                <p class="mb-1">
+                                    <strong>Standard length question?</strong>
+                                </p>
+                                <p class="mb-1">
+                                    <u>Higlighted short answer.</u> And some kind of detailed list.
+                                </p>
+                                <ul>
+                                    <li>list item 1</li>
+                                    <li>list item 2</li>
+                                    <li>list item 3</li>
+                                </ul>
+                            </div>
+                            <!--Question -->
+                            <div>
+                                <p class="mb-1">
+                                    <strong>Short question?</strong>
+                                </p>
+                                <p class="mb-1">
+                                    <u>Higlighted short answer.</u>
+                                </p>
+                                <p class="mb-1">
+                                    Second part of the answer with more details.
+                                </p>
+                                <p>
+                                    Final part of the answer full of detais and Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                            <!--Question -->
+                            <div>
+                                <p class="mb-1">
+                                    <strong>The longest question in this faq. Made up of two sentences in order to span
+                                        to
+                                        the
+                                        next line?</strong>
+                                </p>
+                                <p class="mb-1">
+                                    <u>Higlighted short answer.</u>
+                                </p>
+                                <p class="mb-1">
+                                    Second part of the answer with more details.
+                                </p>
+                                <p>
+                                    Final part of the answer full of detais and Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+
+                            <!--Question -->
+                            <div>
+                                <p class="mb-1">
+                                    <strong>Slightly longer question?</strong>
+                                </p>
+                                <p class="mb-1">
+                                    <u>Higlighted short answer.</u>
+                                </p>
+                                <p class="mb-1">
+                                    Second part of the answer with more details.
+                                </p>
+                                <p>
+                                    Final part of the answer full of detais and Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+
+                        </section>
+                        <!--/Questions visible to all-->
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 text-center">
+                        <!--Section: Contact Form-->
+                        <section>
+                            <p>
+                                <span class="fw-bold">
+                                    Still have any questions? Contact us to get your answer!</span>
+                            </p>
+                            <form action="" method="POST" class="faq-contact-form">
+
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="form4Example2" class="form-control" name="email"
+                                        required="">
+                                    <label class="form-label" for="form4Example2" style="margin-left: 0px;">Email
+                                        address</label>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading" style="width: 9px;"></div>
+                                        <div class="form-notch-middle" style="width: 89.6px;"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Message input -->
+                                <div class="form-outline mb-4">
+                                    <textarea class="form-control" id="form4Example3" rows="4" name="message"
+                                        required=""></textarea>
+                                    <label class="form-label" for="form4Example3"
+                                        style="margin-left: 0px;">Message</label>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading" style="width: 9px;"></div>
+                                        <div class="form-notch-middle" style="width: 60px;"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Checkbox -->
+
+
+                                <!-- Submit button -->
+                                <input type="submit" class="btn btn-primary btn-block mb-4 faq-contact-form-submit"
+                                    value="SEND">
+                                <input type="hidden" name="recaptcha-response" id="recaptchaFaqForm">
+                            </form>
+
+
+                        </section>
+                        <!--/Section: Newsletter-->
+                    </div>
+                </div>
             </article>
+            <!-- End Submit Question -->
         </section>
     </main>
     <footer class="mt-auto text-center bg-secondary text-white p-3">
