@@ -1,4 +1,28 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+.app__background {
+    height: 200px;
+}
+.app__background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.app__logo {
+    width: 30px;
+}
+.app__footer__list a, .copyright{
+    font-size: 0.75em;
+}
+.text-small {
+    font-size: 0.75rem;
+}
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
 /******************/
 /*******Home*******/
 /******************/
