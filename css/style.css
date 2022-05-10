@@ -44,6 +44,7 @@
 /******************/
 .heading {
     width: auto;
+
 }
 
 .card-img-overlay {
@@ -52,6 +53,10 @@
 
 .history {
     border: none;
+}
+
+.end-history {
+    padding: 0px;
 }
 
 
