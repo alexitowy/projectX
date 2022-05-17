@@ -74,6 +74,10 @@
     background-color: #ffffff6e;
 }
 
+.card {
+    background-color: var(--bs-gray-200);
+}
+
 /******************/
 /*******FAQ********/
 /******************/
